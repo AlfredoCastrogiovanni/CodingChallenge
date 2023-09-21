@@ -1,0 +1,99 @@
+* {
+    box-sizing: border-box;
+}
+
+body {
+    background-image: url("img/background.jpg");
+    background-size: cover;
+    margin: auto;
+    margin-top: 100px;
+    width: 1500px;
+    font-family: Georgia, 'Times New Roman', Times, serif;
+
+}
+
+#BOX {
+    background-color: rgba(0, 0, 0, 0.5);
+    border-radius: 25px;
+    padding: 80px 130px 130px;
+}
+
+header {
+    text-align: center;
+}
+
+.logo {
+    width: 200px;
+    
+}
+
+.logo-text {
+    display: block;
+    font-size: 30px;
+    color: rgb(27, 223, 27);
+    font-weight: bolder;
+    padding: 5px;
+}
+
+nav {
+    background-color: #32CD32;
+    text-align: center;
+    padding: 15px;
+}
+
+.device {
+    color: white;
+    padding-top: 20px;
+}
+
+.device-name {
+    font-size: 25px;
+    font-weight: bold;
+}
+
+.device-info {
+    display: block;
+    padding-top: 5px;
+    padding-bottom: 5px;
+}
+
+.arrow:after {
+    content: "\27AA";
+}
+
+.battery-text {
+    padding-bottom: 3px;
+}
+
+.device-info, .battery-text {
+    font-size: 18px;
+}
+
+.battery.high {
+    width: 400px;
+    background-color: #32CD32;
+    color: #32CD32;
+    border-radius: 5px;
+}
+
+.battery.mid {
+    width: 200px;
+    background-color: #ffb347;
+    color: #ffb347;
+    border-radius: 5px;
+}
+
+.battery.low {
+    width: 100px;
+    background-color: #FF4433;
+    color: #FF4433;
+    border-radius: 5px;
+}
+
+.battery.low, .battery.mid, .battery.high {
+    height: 30px;
+}
+
+.battery.low, .battery.mid, .battery.high::after {
+    content: "&#8205";
+}
